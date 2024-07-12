@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldWorldEntLLC</title>
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c7c54; /* Dark green background color */
+            color: #fff; /* White text color */
+            margin: 0;
+            padding: 50px;
+        }
+
+        header {
+            background-color: #589f60; /* Light green header background color */
+            color: #fff; /* White text color */
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #365530; /* Dark green menu background color */
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #365530; /* Dark green footer background color */
+            color: #fff; /* White text color */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1
+            height: 50px;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 400px;
+            z-index: 0;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+     <img src="logo.jpg" alt="WorldWorldEnt Image" width="150px;">
+        <h1>WorldWorldEntLLC</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About Us</a> |
+        <a href="#services">Services</a> |
+        <a href="#portfolio">Portfolio</a> |
+        <a href="#contact">Contact</a>
+        <a href="#files">Listen Here</a>
+    </nav>
+
+    <section id="home">
+        <img src="file:///C:/Users/user/Desktop/Ville/ville5.jpg" alt="Ville Image" width="300px;">
+        <p>Welcome to WorldWorldEntLLC, your premier destination for top-quality music production services.  We specialize in providing exceptional audio engineering solutions tailored to your needs. 
+        ing and mastering, our services are designed to elevate your sound to the next level. Welcome to WorldWorldEntLLC, your premier destination for top-quality music production services. We specialize in providing exceptional audio engineering solutions tailored to your needs. At WorldWorldEntLLC, we are dedicated to helping artists, musicians, and creators bring their musical visions to life with professional expertise and cutting-edge technology. Our team of audio engineers is highly skilled and experienced in delivering industry-leading production services that meet the highest standards of quality and creativity.
+   		</p>
+    </section>
+    
+    <section id="about">
+    <h2>About Us</h2>
+    <p>We provide a comprehensive range of services, including music production, recording studio sessions, professional mixing and mastering, photography, videography, event planning for all occasions, and more.
+ 
+    Our dedicated team is committed to delivering high-quality results in every aspect of our services, ensuring that your creative vision is brought to life with precision and excellence. From capturing the perfect sound in our recording studios to creating visually stunning photos and videos, we are here to support your artistic endeavors and events of all kinds. Let us help you elevate your projects and bring your ideas to fruition with our expertise and passion for creativity.</p>
+	</section>
+
+	<section id="services">
+    <h2>Services</h2>
+    <p>At WorldWorldEntLLC, we offer a wide range of professional music production services tailored to your needs. From mixing and mastering to sound design and audio post-production, we handle every aspect of your project with precision and care. What sets us apart is our commitment to delivering top-quality results at affordable and low cost rates. We believe that great music production should be accessible to all, and we strive to make your creative journey as smooth and enjoyable as possible.  When you choose WorldWorldEntLLC for your music production needs, you can expect nothing but the best. From recording studio sessions to mixing and mastering, our services are designed to elevate your sound to the next level. Our state-of-the-art recording studios are equipped with top-of-the-line equipment and software, ensuring that every note, every beat, and every sound is captured with clarity and precision.</p>
+	</section>	
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Explore our portfolio of diverse music projects showcasing our versatility and commitment to excellence. From dynamic soundscapes to polished tracks, our work reflects our passion for music engineering.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or interested in our services? Reach out to us using the form below. We look forward to collaborating with you on your next music production project!</p>
+        <form action="mailto:larrysmith2310@yahoo.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="2" required></textarea>
+            <input type="submit" value="Submit"> 
+        </form>
+    </section>
+    
+    <section id="files">
+        <h2>Listen Here</h2>
+        <div id="audio-files"></div>
+    </section>
+    
+    <script>
+        const audioFiles = document.getElementById('audio-files');
+
+        for (let i = 1; i <= 15; i++) {
+            const audio = document.createElement('audio');
+            audio.controls = true;
+            audio.src = `file:///C:/Users/user/Desktop/Ville/audio${i}.mp3`;
+            audioFiles.appendChild(audio);
+        }
+        </script>
+
+    <footer>
+        &copy; 2019 WorldWorldEnt LLC. All rights reserved.
+    </footer>
+</body>
+</html>
