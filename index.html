@@ -79,16 +79,10 @@
             margin-bottom 10px;
         }
         
-        section#home {
-            text-align: center;
-
         }
-        section#home {
+        section#home img {
             display: block;
             margin: 0 auto;
-            max-width: 100%
-            height: auto;
-
         }
             
     </style>
@@ -149,21 +143,7 @@
     
     <section id="files">
         <h2>Listen Here</h2>
-        <div id="audio/audio1.mp3"></div>
-        <div id="audio/audio2.mp3"></div>
-        <div id="audio/audio3.mp3"></div>
-        <div id="audio/audio4.mp3"></div>
-        <div id="audio/audio5.mp3"></div>
-        <div id="audio/audio6.mp3"></div>
-        <div id="audio/audio7.mp3"></div>
-        <div id="audio/audio8.mp3"></div>
-        <div id="audio/audio9.mp3"></div>
-        <div id="audio/audio10.mp3"></div>
-        <div id="audio/audio11.mp3"></div>
-        <div id="audio/audio12.mp3"></div>
-        <div id="audio/audio13.mp3"></div>
-        <div id="audio/audio14.mp3"></div>
-        <div id="audio/audio15.mp3"></div>
+        <div id="audio-files"></div>
     </section>
     
     <script>
@@ -172,7 +152,7 @@
         for (let i = 1; i <= 15; i++) {
             const audio = document.createElement('audio');
             audio.controls = true;
-            audio.src = `audio${i}.mp3`;
+            audio.src = `audio/audio${i}.mp3`;
             audioFiles.appendChild(audio);
         }
         </script>
