@@ -72,17 +72,7 @@
         input[type="submit"]:hover {
             background-color: #45a049;
             
-	}
-
-	section#home {
-		display: flex;
-		justify-content: center;
-	}
-	 section#home img {
-    		max-width: 100%;
-    		height: auto;
-		margin: auto; 
-	}
+        }
         
     </style>
 </head>
@@ -103,22 +93,23 @@
     </nav>
 
     <section id="home">
-        <img src="ville5.jpg" alt="WorldWorldEnt Image" width="300px;">
-        <p> Welcome to WorldWorldEntLLC, your premier destination for top-quality music production services. We specialize in providing exceptional audio engineering solutions tailored to your needs. At WorldWorldEntLLC, we are dedicated to helping artists, musicians, and creators bring their musical visions to life with professional expertise and cutting-edge technology. Our team of audio engineers is highly skilled and experienced in delivering industry-leading production services that meet the highest standards of quality and creativity.
-   	</p>
+        <img src="file:///C:/Users/user/Desktop/Ville/ville5.jpg" alt="Ville Image" width="300px;">
+        <p>Welcome to WorldWorldEntLLC, your premier destination for top-quality music production services.  We specialize in providing exceptional audio engineering solutions tailored to your needs. 
+        ing and mastering, our services are designed to elevate your sound to the next level. Welcome to WorldWorldEntLLC, your premier destination for top-quality music production services. We specialize in providing exceptional audio engineering solutions tailored to your needs. At WorldWorldEntLLC, we are dedicated to helping artists, musicians, and creators bring their musical visions to life with professional expertise and cutting-edge technology. Our team of audio engineers is highly skilled and experienced in delivering industry-leading production services that meet the highest standards of quality and creativity.
+    </p>
     </section>
     
-    <section id="about">
+    <section id="about"> 
     <h2>About Us</h2>
     <p>We provide a comprehensive range of services, including music production, recording studio sessions, professional mixing and mastering, photography, videography, event planning for all occasions, and more.
  
     Our dedicated team is committed to delivering high-quality results in every aspect of our services, ensuring that your creative vision is brought to life with precision and excellence. From capturing the perfect sound in our recording studios to creating visually stunning photos and videos, we are here to support your artistic endeavors and events of all kinds. Let us help you elevate your projects and bring your ideas to fruition with our expertise and passion for creativity.</p>
-	</section>
+</section>
 
-	<section id="services">
+<section id="services">
     <h2>Services</h2>
     <p>At WorldWorldEntLLC, we offer a wide range of professional music production services tailored to your needs. From mixing and mastering to sound design and audio post-production, we handle every aspect of your project with precision and care. What sets us apart is our commitment to delivering top-quality results at affordable and low cost rates. We believe that great music production should be accessible to all, and we strive to make your creative journey as smooth and enjoyable as possible.  When you choose WorldWorldEntLLC for your music production needs, you can expect nothing but the best. From recording studio sessions to mixing and mastering, our services are designed to elevate your sound to the next level. Our state-of-the-art recording studios are equipped with top-of-the-line equipment and software, ensuring that every note, every beat, and every sound is captured with clarity and precision.</p>
-	</section>	
+</section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
@@ -140,22 +131,23 @@
     </section>
     
     <section id="files">
-	<h2>Listen Here</h2>
-	<div id="audio1.mp3"></div>
-	<div id="audio2.mp3"></div>
-	<div id="audio3.mp3"></div>
-	<div id="audio4.mp3"></div>
-	<div id="audio5.mp3"></div>
-	<div id="audio6.mp3"></div>
-	<div id="audio7.mp3"></div>
-	<div id="audio8.mp3"></div>
-	<div id="audio9.mp3"></div>
-	<div id="audio10.mp3"></div>
-	<div id="audio11.mp3"></div>
-	<div id="audio12.mp3"></div>
-	<div id="audio13.mp3"></div>
-	<div id="audio14.mp3"></div>
-	<div id="audio15.mp3"></div>
+        <h2>Listen Here</h2>
+        <div id="audio1.mp3"></div>
+<div id="audio2.mp3"></div>
+<div id="audio3.mp3"></div>
+<div id="audio4.mp3"></div>
+<div id="audio5.mp3"></div>
+<div id="audio6.mp3"></div>
+<div id="audio7.mp3"></div>
+<div id="audio8.mp3"></div>
+<div id="audio9.mp3"></div>
+<div id="audio10.mp3"></div>
+<div id="audio11.mp3"></div>
+<div id="audio12.mp3"></div>
+<div id="audio13.mp3"></div>
+<div id="audio14.mp3"></div>
+<div id="audio15.mp3"></div>
+        <div id="audio-files"></div>
     </section>
     
     <script>
@@ -164,7 +156,7 @@
         for (let i = 1; i <= 15; i++) {
             const audio = document.createElement('audio');
             audio.controls = true;
-            audio.src = `audio${i}.mp3`;
+            audio.src = `file:///C:/Users/user/Desktop/Ville/audio${i}.mp3`;
             audioFiles.appendChild(audio);
         }
         </script>
