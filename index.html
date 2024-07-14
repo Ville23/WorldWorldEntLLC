@@ -72,22 +72,21 @@
         input[type="submit"]:hover {
             background-color: #45a049;
             
-        }
+        } 
 
-	 home {
-    	   	 display: flex;
-   		flex-direction: column;
+	section#home {
+    	   	display: flex;
+   		justify-content: center;
     		align-items: center;
-    		justify-content: center;
-    		text-align: center; /* Center text content */
+    		text-align: center;
+    		height: 100vh: center; 
 		}
 
-	 home img {
-    		max-width: 100%;
+	 section#home img {
+    		max-width: 300%;
     		height: auto;
-    		margin: 0 auto; /* Center the image horizontally within its container */
+    		
 		}
-	    
         
     </style>
 </head>
@@ -156,7 +155,7 @@
         for (let i = 1; i <= 15; i++) {
             const audio = document.createElement('audio');
             audio.controls = true;
-            audio.src = `file:///C:/Users/user/Desktop/Ville/audio${i}.mp3`;
+            audio.src = `audio${i}.mp3`;
             audioFiles.appendChild(audio);
         }
         </script>
